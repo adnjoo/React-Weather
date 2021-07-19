@@ -1,8 +1,8 @@
 ```
 npm i
-npm run
+npm run start
 ```
 
-install tailwind, autoprefixer, postcss, craco
+Libraries: Tailwind, Autoprefixer, Postcss, Craco
+
 <!-- https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/ -->
-hello
