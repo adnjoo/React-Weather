@@ -11,7 +11,8 @@ npm run start
 
 Framework: react.js
 
-Libraries: tailwind, axios, react-toggle
+Libraries: tailwind, axios, [react-toggle](https://github.com/aaronshaf/react-toggle), [font-awesome](https://fontawesome.com/)
 
+APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
 to-do: search bar
