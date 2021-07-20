@@ -25,6 +25,7 @@ export default class Weather extends Component {
     super(props);
 
     this.weatherInfo = this.weatherInfo.bind(this);
+    this.handleCheeseChange = this.handleCheeseChange.bind(this);
 
     this.state = {
       cheeseIsReady: 'hi',
@@ -42,6 +43,9 @@ export default class Weather extends Component {
       },
     };
   }
+  handleCheeseChange(){
+
+  }
 
   weatherInfo() {
     return (
@@ -50,6 +54,7 @@ export default class Weather extends Component {
         {/* <h1>{this.state.current.cloud}</h1> */}
         <p className="text-xl">Your location: {this.state.location.name}</p>
         <p className="text-xl">Temperature: {this.state.current.temp_f} F</p>
+        <ToggleButton />
         <p className="text-xl">{this.state.current.condition.text}</p>
         <img src={this.state.current.condition.icon} />
       </div>
@@ -88,8 +93,7 @@ export default class Weather extends Component {
     return (
       <div>
         <span>{this.weatherInfo()}</span>
-        <ToggleButton />
-        work in progress
+        <i>w.i.p.</i>
       </div>
     );
   }
