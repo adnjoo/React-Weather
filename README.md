@@ -1,5 +1,9 @@
 [Link](https://adnjoo.github.io/weather-app/)
 
+> practice React
+
+<img src='./scrn.png' width='250px'>
+
 ```
 npm i
 npm run start
@@ -7,8 +11,4 @@ npm run start
 
 Framework: React (create-react-app)
 
-Libraries:
-- Tailwind (inc. Autoprefixer, Postcss, Craco)
-- Axios
-
-<!-- https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/ -->
+Libraries: Tailwind, Axios
