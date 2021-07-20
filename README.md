@@ -15,4 +15,8 @@ Libraries: tailwind, axios, [react-toggle](https://github.com/aaronshaf/react-to
 
 APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
-to-do: search bar
+to-do:
+
+search bar
+
+add date - use moment.js
