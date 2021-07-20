@@ -1,12 +1,25 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Toggle from "react-toggle";
+import "react-toggle/style.css" // for ES6 modules
+
+
 const abstractapikey = "22bd9ffbb7614d58ba49d51cca4437d0";
 const weatherapikey = "0943201534d540afb8d24105211907";
 
-const Weather1 = () => {
-  return <div>{/* hi there */}</div>;
+const ToggleButton = () => {
+  return(
+  <div>
+    <Toggle
+      id="cheese-status"
+      icons={false}
+      defaultChecked={false}
+      // onChange={this.handleCheeseChange}
+      />
+      <div className='text-xl inline-block transform -translate-y-1'>&nbsp;C/F</div>
+  </div>
+  )
 };
-
 export default class Weather extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +27,7 @@ export default class Weather extends Component {
     this.weatherInfo = this.weatherInfo.bind(this);
 
     this.state = {
+      cheeseIsReady: 'hi',
       ipaddress: null,
       current: {
         condition: {
@@ -32,13 +46,12 @@ export default class Weather extends Component {
   weatherInfo() {
     return (
       <div>
-        <Weather1 />
         <br />
         {/* <h1>{this.state.current.cloud}</h1> */}
-        <p className='text-xl'>Your location: {this.state.location.name}</p>
-        <p className='text-xl'>Temperature: {this.state.current.temp_f} F</p>
-        <p className='text-xl'>{this.state.current.condition.text}</p>
-        <img src={this.state.current.condition.icon } />
+        <p className="text-xl">Your location: {this.state.location.name}</p>
+        <p className="text-xl">Temperature: {this.state.current.temp_f} F</p>
+        <p className="text-xl">{this.state.current.condition.text}</p>
+        <img src={this.state.current.condition.icon} />
       </div>
     );
   }
@@ -69,13 +82,14 @@ export default class Weather extends Component {
             console.log(this.state);
           });
       });
-    console.log("test");
   }
 
   render() {
     return (
       <div>
         <span>{this.weatherInfo()}</span>
+        <ToggleButton />
+        work in progress
       </div>
     );
   }

@@ -2,3 +2,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* for toggle switch */
+
+#slider {
+  transition: .4s;
+}
+
+#slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 18px;
+  top: 2px;
+  transition: .4s;
+  background: white;
+  border-radius: 50%;
+}
+
+input:checked + #slider {
+  background: green;
+}
+
+input:checked + #slider:before {
+  transform: translateX(-16px);
+}
+/*
+* {
+  outline: 1px solid red;
+} */
