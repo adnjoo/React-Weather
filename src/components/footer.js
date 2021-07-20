@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
-  return (<div style={{textAlign:'center',marginTop: '150px'}}>
+  return (
+  <div style={{textAlign:'center'}} className='mt-64 md:mt-48'>
     made by <a href='http://github.com/adnjoo'>adnjoo&nbsp;
     <FontAwesomeIcon icon={['fab','github']}/>
     </a>
-  </div>)
+  </div>
+  )
 }
 
 export default Footer;
