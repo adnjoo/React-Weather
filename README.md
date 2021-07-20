@@ -12,3 +12,6 @@ npm run start
 Framework: react.js
 
 Libraries: tailwind, axios, react-toggle
+
+
+to-do: search bar
