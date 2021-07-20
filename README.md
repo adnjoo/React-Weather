@@ -9,6 +9,6 @@ npm i
 npm run start
 ```
 
-Framework: React (create-react-app)
+Framework: react.js
 
 Libraries: tailwind, axios, react-toggle
