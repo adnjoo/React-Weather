@@ -58,7 +58,7 @@ export default class Weather extends Component {
         //make second axios
         axios
           .get(
-            `http://api.weatherapi.com/v1/current.json?key=${weatherapikey}&q=${this.state.ipaddress}&aqi=no`
+            `https://api.weatherapi.com/v1/current.json?key=${weatherapikey}&q=${this.state.ipaddress}&aqi=no`
           )
           .then((res) => {
             console.log(res.data);
