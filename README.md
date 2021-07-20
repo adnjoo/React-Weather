@@ -11,4 +11,4 @@ npm run start
 
 Framework: React (create-react-app)
 
-Libraries: Tailwind, Axios
+Libraries: tailwind, axios, react-toggle
