@@ -10,7 +10,7 @@ export default class Input extends Component {
     return (
       <div>
         {/* hi there */}
-        <input type='text' id='location'></input>
+        {/* <input type='text' id='location' value='w.i.p.'></input> */}
       </div>
 
     )
