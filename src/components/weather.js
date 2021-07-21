@@ -1,33 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 import axios from "axios";
-import Toggle from "react-toggle";
+import Switch from "react-switch";
 import "react-toggle/style.css" // for ES6 modules
+import { render } from "@testing-library/react";
 
 
 const abstractapikey = "22bd9ffbb7614d58ba49d51cca4437d0";
 const weatherapikey = "0943201534d540afb8d24105211907";
 
-const ToggleButton = () => {
-  return(
-  <div>
-    <Toggle
-      id="cheese-status"
-      icons={false}
-      defaultChecked={false}
-      // onChange={this.handleCheeseChange}
-      />
-      <div className='text-xl inline-block transform -translate-y-1'>&nbsp;C/F</div>
-  </div>
-  )
-};
+
 export default class Weather extends Component {
   constructor(props) {
     super(props);
 
-    this.weatherInfo = this.weatherInfo.bind(this);
-    this.handleCheeseChange = this.handleCheeseChange.bind(this);
-
     this.state = {
+      checked: false,
       cheeseIsReady: 'hi',
       ipaddress: null,
       current: {
@@ -42,21 +29,34 @@ export default class Weather extends Component {
         name: null,
       },
     };
-  }
-  handleCheeseChange(){
+
+    this.weatherInfo = this.weatherInfo.bind(this);
+    this.handleChange = this.handleChange.bind(this);
 
   }
+
+  handleChange(checked) {
+    console.log(this.state.checked)
+    this.setState({ checked });
+    if(checked){
+      // document.getElementById('temperature').innerHTML='123'
+      this.refs.temperature.innerHTML = `Temperature: ${this.state.current.temp_c} C`
+    } else {
+      this.refs.temperature.innerHTML = `Temperature: ${this.state.current.temp_f} F`
+      // document.getElementById('temperature').innerHTML='321'
+    }
+  }
+
 
   weatherInfo() {
     return (
       <div>
         <br />
-        {/* <h1>{this.state.current.cloud}</h1> */}
         <p className="text-xl">Your location: {this.state.location.name}</p>
-        <p className="text-xl">Temperature: {this.state.current.temp_f} F</p>
-        <ToggleButton />
+        <p ref="temperature" className="text-xl">Temperature: {this.state.current.temp_f} F</p>
+        <Switch onChange={this.handleChange} checked={this.state.checked} /> <labeL>C/F</labeL>
         <p className="text-xl">{this.state.current.condition.text}</p>
-        <img src={this.state.current.condition.icon} />
+        <img src={this.state.current.condition.icon} alt={'weather icon'} />
       </div>
     );
   }
@@ -93,8 +93,10 @@ export default class Weather extends Component {
     return (
       <div>
         <span>{this.weatherInfo()}</span>
-        <i>w.i.p.</i>
+        {/* <i>w.i.p.</i> */}
       </div>
     );
   }
 }
+
+
