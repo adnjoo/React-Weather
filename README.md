@@ -15,6 +15,10 @@ Libraries: tailwind, axios, [react-switch](https://www.npmjs.com/package/react-s
 
 APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
+## Notes
+
+I barely wrote any css by using tailwind. It's been really fun trying this out.
+
 to-do:
 
 ~~add date - used new Date()~~
