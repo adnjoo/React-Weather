@@ -1,7 +1,6 @@
 import React, { Component, useRef } from "react";
 import axios from "axios";
 import Switch from "react-switch";
-import "react-toggle/style.css" // for ES6 modules
 import { render } from "@testing-library/react";
 
 
@@ -52,6 +51,12 @@ export default class Weather extends Component {
     return (
       <div>
         <br />
+        {/* https://www.w3schools.com/jsref/jsref_tolocalestring.asp localestring parameters */}
+        <p className='text-xl'>{new Date().toLocaleString("en-US", {
+           year : 'numeric',
+           month: 'long',
+           day : '2-digit'
+           })}</p>
         <p className="text-xl">Your location: {this.state.location.name}</p>
         <p ref="temperature" className="text-xl">Temperature: {this.state.current.temp_f} F</p>
         <Switch onChange={this.handleChange} checked={this.state.checked} /> <labeL>F/C</labeL>
