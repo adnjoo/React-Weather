@@ -18,6 +18,7 @@ function App() {
         <style>{'body { background-color: beige; }'}</style>
       </Helmet>
       <div
+      // tailwind styling for container div
         className="border border-l-8 border-blue-500 shadow rounded-lg
         py-2 px-8 m-10 md:m-20 mt-20
         grid justify-center

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Switch from "react-switch";
+import Input from "./input";
 
 const abstractapikey = "22bd9ffbb7614d58ba49d51cca4437d0";
 const weatherapikey = "0943201534d540afb8d24105211907";
@@ -53,6 +54,8 @@ export default class Weather extends Component {
             year: "numeric",
             month: "long",
             day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit"
           })}
         </p>
         <p className="text-xl">Your location: {this.state.location.name}</p>
@@ -106,6 +109,7 @@ export default class Weather extends Component {
     return (
       <div>
         <span>{this.weatherInfo()}</span>
+        <Input />
       </div>
     );
   }
