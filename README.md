@@ -17,7 +17,7 @@ APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weat
 
 ## Notes
 
-I barely wrote any custom css by using tailwind. It's been really fun trying this out.
+I've really enjoyed using tailwind on this app. I like trying out writing classes instead of vanilla/ custom css styles. So fun! 😊
 
 to-do:
 
