@@ -17,6 +17,7 @@ APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weat
 
 to-do:
 
+~~add date - used new Date() ~~
+
 - search bar
 
-- add date - use moment.js
