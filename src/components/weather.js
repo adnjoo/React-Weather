@@ -52,7 +52,7 @@ export default class Weather extends Component {
       <div>
         <br />
         {/* https://www.w3schools.com/jsref/jsref_tolocalestring.asp localestring parameters */}
-        <p className='text-xl'>{new Date().toLocaleString("en-US", {
+        <p className='text-xl'>Date: {new Date().toLocaleString("en-US", {
            year : 'numeric',
            month: 'long',
            day : '2-digit'
