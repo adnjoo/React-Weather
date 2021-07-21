@@ -54,7 +54,7 @@ export default class Weather extends Component {
         <br />
         <p className="text-xl">Your location: {this.state.location.name}</p>
         <p ref="temperature" className="text-xl">Temperature: {this.state.current.temp_f} F</p>
-        <Switch onChange={this.handleChange} checked={this.state.checked} /> <labeL>C/F</labeL>
+        <Switch onChange={this.handleChange} checked={this.state.checked} /> <labeL>F/C</labeL>
         <p className="text-xl">{this.state.current.condition.text}</p>
         <img src={this.state.current.condition.icon} alt={'weather icon'} />
       </div>
