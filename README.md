@@ -11,7 +11,7 @@ npm run start
 
 Framework: react.js
 
-Libraries: tailwind, axios, [react-toggle](https://github.com/aaronshaf/react-toggle), [font-awesome](https://fontawesome.com/), react-helmet
+Libraries: tailwind, axios, [react-switch](https://www.npmjs.com/package/react-switch), [font-awesome](https://fontawesome.com/), react-helmet
 
 APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
