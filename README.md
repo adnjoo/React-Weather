@@ -5,6 +5,7 @@
 <a href='https://adnjoo.github.io/weather-app/'><img src='./scrn1.png' width='250px'></a>
 
 ```
+git clone https://github.com/adnjoo/weather-app
 npm i
 npm run start
 ```
