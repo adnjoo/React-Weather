@@ -7,7 +7,7 @@
 ```
 git clone https://github.com/adnjoo/weather-app
 cd weather-app/
-npm i
+npm install
 npm run start
 ```
 
