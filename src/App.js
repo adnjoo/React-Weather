@@ -15,6 +15,7 @@ function App() {
   return (
     <div>
       <Helmet>
+        <title>{ 'React Weather' }</title>
         <style>{'body { background-color: beige; }'}</style>
       </Helmet>
       <div
