@@ -6,6 +6,7 @@
 
 ```
 git clone https://github.com/adnjoo/weather-app
+cd weather-app/
 npm i
 npm run start
 ```
