@@ -1,4 +1,4 @@
-## [Demo:](https://adnjoo.github.io/weather-app/)
+## react weather app
 
 > practice React
 
