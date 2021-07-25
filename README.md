@@ -12,7 +12,7 @@ npm install
 npm run start
 ```
 
-## Tech used
+## technology
 
 Framework: react.js
 
@@ -20,7 +20,7 @@ Libraries: tailwind, axios, [react-switch](https://www.npmjs.com/package/react-s
 
 APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
-## Notes
+## notes
 
 I've really enjoyed using tailwind on this app. I enjoyed the programming paradigm of writing styles using classes instead of vanilla/custom css styles. It's been really fun 😊!
 
