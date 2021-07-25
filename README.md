@@ -19,7 +19,7 @@ APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weat
 
 ## Notes
 
-I've really enjoyed using tailwind on this app. I like trying out writing classes instead of vanilla/ custom css styles. So fun! 😊
+I've really enjoyed using tailwind on this app. I enjoyed the programming paradigm of writing styles using classes instead of vanilla/custom css styles. It's been really fun 😊!
 
 to-do:
 
