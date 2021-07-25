@@ -4,12 +4,15 @@
 
 <a href='https://adnjoo.github.io/weather-app/'><img src='./scrn1.png' width='250px'></a>
 
+## instructions
 ```
 git clone https://github.com/adnjoo/weather-app
 cd weather-app/
 npm install
 npm run start
 ```
+
+## Tech used
 
 Framework: react.js
 
