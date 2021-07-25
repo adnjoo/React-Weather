@@ -13,7 +13,7 @@ npm run start
 
 Framework: react.js
 
-Libraries: tailwind, axios, [react-switch](https://www.npmjs.com/package/react-switch), [font-awesome](https://fontawesome.com/), react-helmet, react-favicon
+Libraries: tailwind, axios, [react-switch](https://www.npmjs.com/package/react-switch), [font-awesome](https://fontawesome.com/), [react-helmet](https://github.com/nfl/react-helmet), [react-favicon](https://www.npmjs.com/package/react-favicon)
 
 APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weatherapi.com/)
 
