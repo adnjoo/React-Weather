@@ -1,6 +1,6 @@
 ## react weather app
 
-> practice React
+> this app helps you tell the weather in your local area.
 
 <a href='https://adnjoo.github.io/weather-app/'><img src='./scrn1.png' width='250px'></a>
 
