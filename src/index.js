@@ -6,7 +6,7 @@ import Favicon from 'react-favicon'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Favicon url='https://raw.githubusercontent.com/adnjoo/weather-app/master/weather.ico' />
+    <Favicon url='https://raw.githubusercontent.com/adnjoo/weather-app/master/cloudy.png' />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
