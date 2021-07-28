@@ -8,25 +8,26 @@ export default class Input extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "",
+      value: "enter city/zip-code here",
       name: '',
       c: '',
       f: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.clearInput = this.clearInput.bind(this);
   }
 
   handleChange(e) {
     this.setState({ value: e.target.value });
   }
+  clearInput(){
+    this.setState({value:''})
+  }
 
   handleKeyDown(e) {
-    // if enter is pressed
-    setTimeout(()=>{
 
-
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13) {         // if enter is pressed
       console.log(e.target.value)
       console.log(this.state.value)
       axios.get(
@@ -44,9 +45,9 @@ export default class Input extends Component {
           })
           this.sendToParent()
         })
-        // do something
+        // clear input field
+        this.setState({value:''})
     }
-    },100)
   }
 
   sendToParent = () => {
@@ -55,14 +56,15 @@ export default class Input extends Component {
 
   render() {
     return (
-      <div>
-        {/* hi there */}
+      <div class='input border-b border-gray-600'>
         <input
           type="text"
           id="location"
           value={this.state.value}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
+          onClick={this.clearInput}
+          className='input'
         ></input>
       </div>
     );

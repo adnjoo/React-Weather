@@ -25,7 +25,6 @@ function App() {
         grid justify-center
         bg-gradient-to-r from-blue-100 to-blue-300"
         >
-        <p className='text-3xl'>My weather ☀️☁️</p>
         <Weather />
       </div>
       <Footer />

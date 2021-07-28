@@ -84,9 +84,9 @@ export default class Weather extends Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className='my-4'>
         <br />
+        <p className='text-3xl mb-2'>My weather ☀️☁️</p>
         <p className="text-xl">
           Date:{" "}
           {new Date().toLocaleString("en-US", {
@@ -107,10 +107,9 @@ export default class Weather extends Component {
           uncheckedIcon={false}
           checkedIcon={false}
         />{" "}
-        <label>F/C</label>
+        <label >F/C</label>
         <p className="text-xl">{this.state.current.condition.text}</p>
         <img src={this.state.current.condition.icon} alt={"weather icon"} />
-      </div>
         <Input parentUpdate={this.parentUpdate} />
       </div>
     );
