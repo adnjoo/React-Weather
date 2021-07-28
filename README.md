@@ -2,7 +2,7 @@
 
 > this app helps you find the weather.
 
-<a href='https://adnjoo.github.io/weather-app/'><img src='./scrn1.png' width='250px'></a>
+<a href='https://adnjoo.github.io/weather-app/'><img src='./scrn4.png' width='250px'></a>
 
 ## instructions
 ```
