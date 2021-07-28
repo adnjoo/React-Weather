@@ -33,9 +33,15 @@ export default class Input extends Component {
         `https://api.weatherapi.com/v1/current.json?key=${weatherapikey}&q=${e.target.value}&aqi=no`)
         .then((res)=>{
           console.log(res.data)
-          this.state.name = res.data.location.name
-          this.state.c = res.data.current.temp_c
-          this.state.f = res.data.current.temp_f
+          this.setState({
+            name: res.data.location.name
+          })
+          this.setState({
+            c: res.data.current.temp_c
+          })
+          this.setState({
+            f: res.data.current.temp_f
+          })
           this.sendToParent()
         })
         // do something

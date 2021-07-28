@@ -27,7 +27,6 @@ export default class Weather extends Component {
       },
     };
 
-    this.weatherInfo = this.weatherInfo.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.parentUpdate = this.parentUpdate.bind(this);
   }
@@ -35,44 +34,15 @@ export default class Weather extends Component {
   handleChange(checked) {
     console.log(this.state.checked);
     this.setState({ checked });
-    if (checked) {
-      // document.getElementById('temperature').innerHTML='123'
-      this.refs.temperature.innerHTML = `Temperature: ${this.state.current.temp_c} C`;
-    } else {
-      this.refs.temperature.innerHTML = `Temperature: ${this.state.current.temp_f} F`;
-      // document.getElementById('temperature').innerHTML='321'
-    }
+    this.getTemp(checked)
   }
 
-  weatherInfo() {
-    return (
-      <div>
-        <br />
-        <p className="text-xl">
-          Date:{" "}
-          {new Date().toLocaleString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-          })}
-        </p>
-        <p className="text-xl">Location: {this.state.location.name}</p>
-        <p ref="temperature" className="text-xl">
-          Temperature: {this.state.current.temp_f} F
-        </p>
-        <Switch
-          onChange={this.handleChange}
-          checked={this.state.checked}
-          uncheckedIcon={false}
-          checkedIcon={false}
-        />{" "}
-        <labeL>F/C</labeL>
-        <p className="text-xl">{this.state.current.condition.text}</p>
-        <img src={this.state.current.condition.icon} alt={"weather icon"} />
-      </div>
-    );
+  getTemp (param) {
+    if (param === false){
+      return this.state.current.temp_c + ' °C'
+    } else {
+      return this.state.current.temp_f + ' °F'
+    }
   }
 
   parentUpdate(n, c, f) {
@@ -82,7 +52,6 @@ export default class Weather extends Component {
     copy.current.temp_c = c;
     copy.current.temp_f = f;
     this.setState(copy);
-    this.setState(this.state)
   }
 
   componentDidMount() {
@@ -116,7 +85,32 @@ export default class Weather extends Component {
   render() {
     return (
       <div>
-        <span>{this.weatherInfo()}</span>
+        <div>
+        <br />
+        <p className="text-xl">
+          Date:{" "}
+          {new Date().toLocaleString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
+        </p>
+        <p className="text-xl">Location: {this.state.location.name}</p>
+        <p ref="temperature" className="text-xl">
+          Temperature: {this.getTemp(this.state.checked)}
+        </p>
+        <Switch
+          onChange={this.handleChange}
+          checked={this.state.checked}
+          uncheckedIcon={false}
+          checkedIcon={false}
+        />{" "}
+        <label>F/C</label>
+        <p className="text-xl">{this.state.current.condition.text}</p>
+        <img src={this.state.current.condition.icon} alt={"weather icon"} />
+      </div>
         <Input parentUpdate={this.parentUpdate} />
       </div>
     );
