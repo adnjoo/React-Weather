@@ -48,7 +48,6 @@ export default class Weather extends Component {
     return (
       <div>
         <br />
-        {/* https://www.w3schools.com/jsref/jsref_tolocalestring.asp localestring parameters */}
         <p className="text-xl">
           Date:{" "}
           {new Date().toLocaleString("en-US", {
@@ -59,7 +58,7 @@ export default class Weather extends Component {
             minute: "2-digit",
           })}
         </p>
-        <p className="text-xl">Your location: {this.state.location.name}</p>
+        <p className="text-xl">Location: {this.state.location.name}</p>
         <p ref="temperature" className="text-xl">
           Temperature: {this.state.current.temp_f} F
         </p>
