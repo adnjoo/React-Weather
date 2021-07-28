@@ -29,6 +29,7 @@ export default class Weather extends Component {
 
     this.weatherInfo = this.weatherInfo.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.parentUpdate = this.parentUpdate.bind(this);
   }
 
   handleChange(checked) {
@@ -55,7 +56,7 @@ export default class Weather extends Component {
             month: "long",
             day: "2-digit",
             hour: "2-digit",
-            minute: "2-digit"
+            minute: "2-digit",
           })}
         </p>
         <p className="text-xl">Your location: {this.state.location.name}</p>
@@ -63,18 +64,26 @@ export default class Weather extends Component {
           Temperature: {this.state.current.temp_f} F
         </p>
         <Switch
-        onChange={this.handleChange}
-        checked={this.state.checked}
-        uncheckedIcon={false}
-        // uncheckedHandleIcon={'F'}
-        // checkedHandleIcon={'C'}
-        checkedIcon={false}
-         />{" "}
+          onChange={this.handleChange}
+          checked={this.state.checked}
+          uncheckedIcon={false}
+          checkedIcon={false}
+        />{" "}
         <labeL>F/C</labeL>
         <p className="text-xl">{this.state.current.condition.text}</p>
         <img src={this.state.current.condition.icon} alt={"weather icon"} />
       </div>
     );
+  }
+
+  parentUpdate(n, c, f) {
+    //get copy of state first
+    let copy = Object.assign({}, this.state);
+    copy.location.name = n;
+    copy.current.temp_c = c;
+    copy.current.temp_f = f;
+    this.setState(copy);
+    this.setState(this.state)
   }
 
   componentDidMount() {
@@ -89,7 +98,7 @@ export default class Weather extends Component {
       })
       .then(() => {
         // console.log(this.state)
-        //make second axios
+        //make second axios call
         axios
           .get(
             `https://api.weatherapi.com/v1/current.json?key=${weatherapikey}&q=${this.state.ipaddress}&aqi=no`
@@ -109,7 +118,7 @@ export default class Weather extends Component {
     return (
       <div>
         <span>{this.weatherInfo()}</span>
-        <Input />
+        <Input parentUpdate={this.parentUpdate} />
       </div>
     );
   }
