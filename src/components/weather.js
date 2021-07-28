@@ -39,9 +39,9 @@ export default class Weather extends Component {
 
   getTemp (param) {
     if (param === false){
-      return this.state.current.temp_c + ' °C'
+      return `${this.state.current.temp_f} °F`
     } else {
-      return this.state.current.temp_f + ' °F'
+      return `${this.state.current.temp_c} °C`
     }
   }
 
