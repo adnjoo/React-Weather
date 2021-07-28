@@ -1,6 +1,6 @@
 ## react weather app
 
-> this app helps you tell the weather in your local area.
+> this app helps you find the weather.
 
 <a href='https://adnjoo.github.io/weather-app/'><img src='./scrn1.png' width='250px'></a>
 
