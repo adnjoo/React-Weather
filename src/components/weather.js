@@ -45,12 +45,12 @@ export default class Weather extends Component {
     }
   }
 
-  parentUpdate(n, c, f) {
+  parentUpdate(name, temp_c, temp_f) {
     //get copy of state first
     let copy = Object.assign({}, this.state);
-    copy.location.name = n;
-    copy.current.temp_c = c;
-    copy.current.temp_f = f;
+    copy.location.name = name;
+    copy.current.temp_c = temp_c;
+    copy.current.temp_f = temp_f;
     this.setState(copy);
   }
 
