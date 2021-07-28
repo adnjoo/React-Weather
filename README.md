@@ -6,10 +6,10 @@
 
 ## instructions
 ```
-git clone https://github.com/adnjoo/weather-app
-cd weather-app/
-npm install
-npm run start
+$ git clone https://github.com/adnjoo/weather-app
+$ cd weather-app/
+$ npm install
+$ npm run start
 ```
 
 ## technology
