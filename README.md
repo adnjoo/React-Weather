@@ -24,6 +24,6 @@ APIs: [abstractapi](https://www.abstractapi.com/), [weatherapi](https://www.weat
 ## react-gh-pages
 
 command to gen prod build of app, and deploy to gh-pages
-```sh
+```
 $ npm run deploy
 ```
