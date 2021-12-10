@@ -4,7 +4,7 @@
 
 <a href='https://adnjoo.github.io/React-Weather/'><img src='./scrn5.png' width='250px'></a>
 
-## Technology
+## Technology:
 
 * react.js
 * tailwind 
@@ -19,7 +19,7 @@ APIs:
 * [abstractapi](https://www.abstractapi.com/) 
 * [weatherapi](https://www.weatherapi.com/)
 
-## instructions
+## Instructions:
 ```
 $ git clone https://github.com/adnjoo/React-Weather
 $ cd React-Weather/
