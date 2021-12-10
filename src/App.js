@@ -21,9 +21,9 @@ function App() {
       <div
       // tailwind styling for container div
         className="border border-l-8 border-blue-500 shadow rounded-lg
-        py-2 px-8 m-10 md:m-20 mt-20
-        grid justify-center
+        py-2 px-8 mt-20 mx-20
         bg-gradient-to-r from-blue-100 to-blue-300"
+        style={{marginTop:'100px', marginLeft:'20px', marginRight:'20px'}}
         >
         <Weather />
       </div>

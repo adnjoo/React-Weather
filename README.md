@@ -2,7 +2,7 @@
 
 > this app helps you find the weather.
 
-<a href='https://adnjoo.github.io/React-Weather/'><img src='./scrn4.png' width='250px'></a>
+<a href='https://adnjoo.github.io/React-Weather/'><img src='./scrn5.png' width='250px'></a>
 
 ## instructions
 ```
