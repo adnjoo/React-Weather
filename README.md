@@ -2,12 +2,12 @@
 
 > this app helps you find the weather.
 
-<a href='https://adnjoo.github.io/weather-app/'><img src='./scrn4.png' width='250px'></a>
+<a href='https://adnjoo.github.io/React-Weather/'><img src='./scrn4.png' width='250px'></a>
 
 ## instructions
 ```
-$ git clone https://github.com/adnjoo/weather-app
-$ cd weather-app/
+$ git clone https://github.com/adnjoo/React-Weather
+$ cd React-Weather/
 $ npm install
 $ npm run start
 ```
