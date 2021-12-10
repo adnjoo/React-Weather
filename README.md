@@ -6,18 +6,18 @@
 
 ## Technology:
 
-* react.js
-* tailwind 
-* axios 
-* [react-switch](https://www.npmjs.com/package/react-switch) 
-* [font-awesome](https://fontawesome.com/) 
-* [react-helmet](https://github.com/nfl/react-helmet) 
-* [react-favicon](https://www.npmjs.com/package/react-favicon)
-* react-gh-pages
+* React.js
+* Tailwind 
+* Axios 
+* [React Switch](https://www.npmjs.com/package/react-switch) 
+* [Font Awesome](https://fontawesome.com/) 
+* [React Helmet](https://github.com/nfl/react-helmet) 
+* [React Favicon](https://www.npmjs.com/package/react-favicon)
+* React-GH-Pages
 
 APIs: 
-* [abstractapi](https://www.abstractapi.com/) 
-* [weatherapi](https://www.weatherapi.com/)
+* [Abstract API](https://www.abstractapi.com/) 
+* [Weather API](https://www.weatherapi.com/)
 
 ## Instructions:
 ```
