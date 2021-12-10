@@ -1,18 +1,10 @@
-## react weather app
+## React Weather
 
-> this app helps you find the weather.
+> This app helps you find the weather.
 
 <a href='https://adnjoo.github.io/React-Weather/'><img src='./scrn5.png' width='250px'></a>
 
-## instructions
-```
-$ git clone https://github.com/adnjoo/React-Weather
-$ cd React-Weather/
-$ npm install
-$ npm run start
-```
-
-## technology
+## Technology
 
 * react.js
 * tailwind 
@@ -27,3 +19,10 @@ APIs:
 * [abstractapi](https://www.abstractapi.com/) 
 * [weatherapi](https://www.weatherapi.com/)
 
+## instructions
+```
+$ git clone https://github.com/adnjoo/React-Weather
+$ cd React-Weather/
+$ npm install
+$ npm run start
+```
