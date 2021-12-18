@@ -26,3 +26,8 @@ $ cd React-Weather/
 $ npm install
 $ npm run start
 ```
+
+## Build to GitHub Pages:
+```
+$ npm run build
+```
