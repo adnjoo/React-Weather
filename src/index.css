@@ -7,3 +7,18 @@
 .input {
   width:100%;
 }
+
+.mycontainerdiv {
+  margin: 100px auto auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+}
+
+/* Medium devices breakpoint */
+@media only screen and (max-width: 768px) {
+  .mycontainerdiv {
+    width:90%;
+  }
+}
